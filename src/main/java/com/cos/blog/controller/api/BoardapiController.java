@@ -18,12 +18,12 @@ public class BoardapiController {
 	@Autowired
 	private BoardService boardService;
 	
-	
 	@PostMapping("/api/board")
 	public ResponseDto<Integer> save(@RequestBody Board board,@AuthenticationPrincipal PrincipalDetail principal) { 
 		
 		boardService.글쓰기(board,principal.getUser());
 		return new ResponseDto<Integer>(HttpStatus.OK.value(),1);
 		}
+	
 	
 }
