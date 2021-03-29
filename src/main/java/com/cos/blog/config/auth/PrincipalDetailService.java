@@ -9,6 +9,8 @@ import org.springframework.stereotype.Service;
 import com.cos.blog.model.User;
 import com.cos.blog.repository.UserRepository;
 
+import lombok.RequiredArgsConstructor;
+
 @Service //Bean등록
 public class PrincipalDetailService implements UserDetailsService {
 	
