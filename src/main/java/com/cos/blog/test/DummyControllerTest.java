@@ -1,6 +1,5 @@
 package com.cos.blog.test;
 
-import java.util.Comparator;
 import java.util.List;
 
 import javax.transaction.Transactional;
@@ -22,8 +21,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.cos.blog.model.RoleType;
 import com.cos.blog.model.User;
 import com.cos.blog.repository.UserRepository;
-
-import javassist.runtime.Desc;
 
 //html파일이 아니라 data를 리턴해주는 controller = RestController
 @RestController
